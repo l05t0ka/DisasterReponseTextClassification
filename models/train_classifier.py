@@ -50,9 +50,9 @@ def load_data(database_filepath):
 def tokenize(text):
     """tokenize function processes message text data - lowercase, no punctuation, lemmatization, URLs
     INPUT: 
-        text - text to tokenize
+        text (str) - text to tokenize
     OUTPUT: 
-        cleaned_tokens - list of tokens"""
+        cleaned_tokens (list) - list of tokens"""
     url_regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
     urls_found = re.findall(url_regex, text)
     for url in urls_found:
@@ -114,6 +114,7 @@ def evaluate_model(model, X_test, Y_test, model_filepath, category_names):
         X_test (pd.DataFrame) -  Column with messages
         Y_test (pd.DataFrame) - Encoded columns of categories
         model_filepath (str) - path of model (used to save results under same name as Pickle file)
+        category_names (list) - list of names of target categories (labels)
     Output:
         None
     """
