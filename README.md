@@ -90,6 +90,7 @@ Additionally, a label named "not_related" was created as an attempt to catch all
 The test model performance statistics are available under `data/classifier_cv`.
 Due to the fact the data was heavily imbalanced, meaning many categories were underrepresented in the data because of its relative scarcity, one way to improve the model would be to obtain more data or generate synthetic data to train the model on. Besides, the impact of stopwords removal and increase of n-grams used as features can be examined. 
 Additionaly, different machine learning alghorithms can be used as well as more exhaustive parameter optimization or penalization of false classifications can be done.
+As some of the labels seem to overlap, another option can be to aggregate similar labels into one main category, which would decrease the granularity of target classes.
   
 
 ### Acknowledgement: <a name="acknowledgement"></a>
