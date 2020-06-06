@@ -20,10 +20,10 @@
 
 
 ### Description: <a name="description"></a>
-Figure Eight Data Set [Disaster Response Messages](https://www.figure-eight.com/dataset/combined-disaster-response-data/) contains several thousands of messages that have been assigned to some of 36 categories based on their content. These categories represent various emergencies.
+Figure Eight Data Set [Disaster Response Messages](https://www.figure-eight.com/dataset/combined-disaster-response-data/) contains several thousand messages that have been assigned to some of 36 categories based on their content. These categories represent various emergencies such as "floods", "earthquakes" or related to security.
 
 The main goal of this project is to develop a web dashboard that can help emergency workers analyze incoming messages and sort them into specific categories to speed up aid and contribute to more efficient handling of emergency situations.
-This project demonstrates, among other things, textual data handling, building an ETL- and ML-pipeline and deployment of the trianed model to the Web using Flask.
+This project demonstrates, among other things, textual data handling, building an ETL- and ML-pipeline and deployment of the trained model to the Web using Flask.
 
 
 
