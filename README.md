@@ -20,7 +20,7 @@ This project demonstrates
 
 
 
-![](project_showcase.gif)
+![](project_showcase_demo.gif)
 
 
 ### Quickstart: <a name="quickstart"></a>
