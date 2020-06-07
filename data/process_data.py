@@ -9,8 +9,8 @@ def load_data(messages_filepath, categories_filepath):
              categories_filepath (str) - path to categories data
         OUTPUT:
              df (pd.DataFrame) - loaded, joined data"""
-    messages = pd.read_csv(messages_filepath, encoding="utf-8")
-    categories = pd.read_csv(categories_filepath, encoding="utf-8")
+    messages = pd.read_csv(messages_filepath, encoding="utf-8)
+    categories = pd.read_csv(categories_filepath, encoding="utf-8)
     df = messages.merge(categories, how="inner", on="id")
     return df
 
@@ -80,7 +80,7 @@ def save_data(df, database_filename):
             database_filename (str) - name of the database
         OUTPUT: NONE"""
     engine = create_engine(f'sqlite:///{database_filename}')
-    df.to_sql("Disasters", engine, index=False, if_exists='replace')
+    df.to_sql("Disasters", engine, index=False)
   
 
 
