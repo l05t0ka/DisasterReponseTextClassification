@@ -3,24 +3,31 @@
 ### Table of Contents:
 
 1.[Description](#description)
+
 2.[Quickstart](#quickstart)
+
 3.[Instructions](#instructions)
+
 4.[Project Structure](#structure)
+
 5.[Details on data cleaning](#datacleaning)
+
 6.[Extension and possible improvements](#extension)
+
 7.[Acknowledgements](#acknowledgement)
+
 8.[Licensing](#licensing)
 
 
 ### Description: <a name="description"></a>
-Figure Eight Data Set [Disaster Response Messages](https://www.figure-eight.com/dataset/combined-disaster-response-data/) contains several thousands of messages that have been assigned to some of 36 categories based on their content. These categories represent various emergencies.
+Figure Eight Data Set [Disaster Response Messages](https://www.figure-eight.com/dataset/combined-disaster-response-data/) contains several thousand messages that have been assigned to some of 36 categories based on their content. These categories represent various emergencies such as "floods", "earthquakes" or related to security.
 
 The main goal of this project is to develop a web dashboard that can help emergency workers analyze incoming messages and sort them into specific categories to speed up aid and contribute to more efficient handling of emergency situations.
-This project demonstrates 
+This project demonstrates, among other things, textual data handling, building an ETL- and ML-pipeline and deployment of the trained model to the Web using Flask.
 
 
 
-![](project_showcase.gif)
+![](project_showcase_demo.gif)
 
 
 ### Quickstart: <a name="quickstart"></a>
@@ -83,6 +90,7 @@ Additionally, a label named "not_related" was created as an attempt to catch all
 The test model performance statistics are available under `data/classifier_cv`.
 Due to the fact the data was heavily imbalanced, meaning many categories were underrepresented in the data because of its relative scarcity, one way to improve the model would be to obtain more data or generate synthetic data to train the model on. Besides, the impact of stopwords removal and increase of n-grams used as features can be examined. 
 Additionaly, different machine learning alghorithms can be used as well as more exhaustive parameter optimization or penalization of false classifications can be done.
+As some of the labels seem to overlap, another option can be to aggregate similar labels into one main category, which would decrease the granularity of target classes.
   
 
 ### Acknowledgement: <a name="acknowledgement"></a>
